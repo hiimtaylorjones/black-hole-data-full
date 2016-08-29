@@ -29,7 +29,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-group :test do
+group :devlopment, :test do
   gem 'faker'
   gem 'factory_girl_rails'
 end
