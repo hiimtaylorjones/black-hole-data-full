@@ -13,7 +13,7 @@ gem 'uglifier', '>= 1.3.0'
 
 # For JSON API Things.
 gem 'ember-cli-rails'
-gem 'active_model_serializers'
+gem 'active_model_serializers', '~> 0.10.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

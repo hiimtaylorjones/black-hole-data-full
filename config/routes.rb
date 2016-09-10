@@ -7,4 +7,10 @@ Rails.application.routes.draw do
       resources :posts
     end
   end
+
+  namespace :api_testing do
+    namespace :v1 do
+      resources :posts
+    end
+  end
 end
