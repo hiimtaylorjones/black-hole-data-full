@@ -1,0 +1,13 @@
+<h4>Here Are Some of My posts From The Black Hole</h4>
+
+{{#each model as |post|}}
+  <div class="post">
+    <h5>{{post.title}}</h5>
+    <p>{{post.body}}</p>
+  </div>
+{{/each}}
+
+
+{{outlet}}
+
+{{#link-to 'posts.new'}}<a href="">New post</a>{{/link-to}}
