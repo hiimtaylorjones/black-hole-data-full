@@ -1,0 +1,28 @@
+<h5>Initializing post</h5>
+
+<div class="span-8">
+  <div class="ember-form">
+    <div class="input-field">
+      {{input type="text" value=model.title class="form-control" placeholder="Post Title"}}
+    </div>
+
+    <div class="input-field">
+      {{textarea value=model.body class="form-control" placeholder="Post Body"}}
+    </div>
+
+    <div class="input-group-btn">
+      <button type="submit" class="btn btn-default" {{action 'savepost' model}}>Transmit</button>
+    </div>
+  </div>
+</div>
+
+<div class="span-4">
+  <h3>Things To Remember About Markdown</h3>
+  <p>Use # - ##### to connotate h1 - h5</p>
+  <p>Use `` for inline code</p>
+  <p>Use ``` for code blocks</p>
+  <p>*[word]* for <b>bold</b></p>
+  <p>**[word]** for <i>italics</i></p>
+  <p>Use [link](address) for links</p>
+
+</div>
