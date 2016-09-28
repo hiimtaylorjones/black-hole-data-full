@@ -5,6 +5,8 @@
     "ember-cli-shims": "0.1.1",
     "ember-qunit-notifications": "0.1.0",
     "bourbon": "4.2.6",
-    "neat": "~1.7.2"
+    "neat": "~1.7.2",
+    "remarkable": "^1.7.0",
+    "highlightjs": "^9.6.0"
   }
 }
