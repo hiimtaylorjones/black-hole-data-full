@@ -13,7 +13,7 @@ Router.map(function() {
   });
   this.route('about');
   this.route('projects');
-  this.route('login');
+  this.route('login', { path: '/admin/login' });
 });
 
 export default Router;

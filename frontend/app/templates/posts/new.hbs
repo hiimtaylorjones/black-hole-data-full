@@ -3,11 +3,11 @@
 <div class="span-8">
   <div class="ember-form">
     <div class="input-field">
-      {{input type="text" value=model.title class="form-control" placeholder="Post Title"}}
+      {{input type="text" value=model.title class="title" placeholder="Post Title"}}
     </div>
 
     <div class="input-field">
-      {{textarea value=model.body class="form-control" placeholder="Post Body"}}
+      {{textarea value=model.body class="body" placeholder="Post Body"}}
     </div>
 
     <div class="input-group-btn">
@@ -17,6 +17,10 @@
 </div>
 
 <div class="span-4">
-  <h1>{{ md-text text = model.title }}</h1>
-  {{ md-text text = model.body }}
+  <div class="post-preview">
+    <h1 class="title">{{ md-text text = model.title }}</h1></div>
+    <div class="post-body">
+      {{ md-text text = model.body }}
+    </div>
+  </div>
 </div>

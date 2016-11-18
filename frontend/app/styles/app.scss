@@ -2,35 +2,35 @@
 @import "neat";
 @import "_grids";
 @import "_fonts";
+@import "_buttons";
 
 .ember-form {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+
   .input-field {
     margin-top: 10px;
     margin-bottom: 10px;
+
     input[type="text"] {
       width: 80%;
       font-size: 1em;
       border-radius: 4px;
+      border: 1px solid black;
+      font-size: 1.25em;
+      padding: 10px;
     }
 
     textarea {
+      padding: 10px;
       width: 80%;
-      font-size: 0.75em;
-      height: 20em;
+      height: 30em;
       border-radius: 8px;
+      font-size: 1.25em;
     }
   }
+
 }
-
-.btn {
-  font-size: 1.25em;
-  background-color: #1c9599;
-  color: white;
-  border-radius: 2px;
-  border: 1px solid #1c9599;
-}
-
-
 
 .post {
   h5 {
@@ -42,6 +42,10 @@
   border-top: black 1px solid;
   border-bottom: black 1px solid;
   margin-bottom: 10px;
+}
+
+.post-preview {
+  font-style: Arial;
 }
 
 .container {
