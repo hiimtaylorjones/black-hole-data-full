@@ -1,26 +1,30 @@
-<h5>Initializing post</h5>
+<div class="marquee">
 
-<div class="span-8">
-  <div class="ember-form">
-    <div class="input-field">
-      {{input type="text" value=model.title class="title" placeholder="Post Title"}}
-    </div>
+  <h5>Initializing Post</h5>
 
-    <div class="input-field">
-      {{textarea value=model.body class="body" placeholder="Post Body"}}
-    </div>
+  <div class="span-8">
+    <div class="ember-form">
+      <div class="input-field">
+        {{input type="text" value=model.title class="title" placeholder="Post Title"}}
+      </div>
 
-    <div class="input-group-btn">
-      <button type="submit" class="btn btn-default" {{action 'savepost' model}}>Transmit</button>
-    </div>
-  </div>
-</div>
+      <div class="input-field">
+        {{textarea value=model.body class="body" placeholder="Post Body"}}
+      </div>
 
-<div class="span-4">
-  <div class="post-preview">
-    <h1 class="title">{{ md-text text = model.title }}</h1>
-    <div class="post-body">
-      {{ md-text text = model.body }}
+      <div class="input-group-btn">
+        <button type="submit" class="btn btn-default" {{action 'savepost' model}}>Transmit</button>
+      </div>
     </div>
   </div>
+
+  <div class="span-4">
+    <div class="post-preview">
+      <h1 class="title">{{ md-text text = model.title }}</h1>
+      <div class="post-body">
+        {{ md-text text = model.body }}
+      </div>
+    </div>
+  </div>
+
 </div>
